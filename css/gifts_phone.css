@@ -1,0 +1,306 @@
+
+
+/* 抽奖部分 */
+#choosegift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255,255,255,0);
+    border-radius: 8%;
+    margin: 0 auto;
+
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+    border-radius: 8%;
+    margin: auto;
+}
+
+#wheel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0);
+    border-radius: 10%;
+}
+
+    .cell img {
+        width: 90%;
+        height: 90%;
+        border-radius: 15%;
+    }
+
+#selectedCell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle at center, transparent 0%, transparent 0%, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 60%, transparent 60%, transparent 100%);
+    cursor: pointer;
+    font-size: 8vw;
+}
+
+#lotteryChancesDisplay {
+    font-size: 3vw;
+}
+
+/* 礼物池部分 */
+#gifts_pool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    padding: 1%;
+    margin-top: 6%;
+}
+
+#gifts_selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255,255,255,0.3);
+    padding: 3%;
+    border-radius: 20px;
+}
+
+#gifts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    flex-grow: 0; /* 防止子元素相对于父容器的大小随着可用空间改变 */
+    border-radius: 6px;
+}
+
+    #gifts h2 {
+        font-size: 5vw;
+        writing-mode: vertical-rl;
+        align-items: center;
+    }
+
+.text-container0 {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        width: auto;
+    height: auto;
+    margin-right: 1.5%;
+}
+
+.text-container01 {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+        width: 100%;
+    height: auto;
+    margin-top: 1.5%;
+}
+.text-container02 {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+        width: 100%;
+    height: auto;
+    margin: 1%;
+}
+.text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    padding: 0.2%;
+    box-sizing: border-box;
+    border-radius: 12%;
+}
+
+    .text-container p {
+        text-align: center;
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+
+#exchange {
+    display: flex;
+    flex-direction: row; /* 水平布局 */
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    width: 90%;
+}
+
+#exchangeButton,
+#getMoreChancesButton {
+    font-size: 3.5vw;
+    font-family: SimSun, sans-serif;
+    padding: 1%;
+    width: 20%; /* 设置按钮的宽度 */
+    height: auto;
+    margin-right: 10%; /* 设置按钮之间的间距 */
+    background-color: rgba(255,255,255,0.5);
+}
+
+#gifts_selected .highlighted {
+    background-color: #feff6a;
+    color: #000000;
+    font-weight: bold;
+}
+
+#拼图部分 #game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 auto;
+    flex-direction: column; /* 垂直布局 */
+}
+
+.box {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid #000;
+    margin: 2% auto;
+    position: relative;
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+    .box .sz {
+        background: #ecc;
+        border: 0px #cec solid;
+        position: absolute;
+        transition: all 0.5s;
+    }
+
+        .box .sz img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box .sz.kong {
+            border: 2px transparent solid;
+            background: transparent;
+        }
+
+.btnbox {
+    text-align: center;
+    margin-top: 1%;
+}
+
+    .btnbox .time {
+        color: white;
+    }
+
+    .btnbox .jieguo {
+        color: red;
+    }
+
+#btn {
+    text-align: center;
+    width: 30%;
+    height: 20%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+button {
+    width: 20%;
+    height: 20%;
+    margin: 4%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#game {
+    display: none;
+}
+
+
+#待兑换礼物部分 #highlightedGiftsDisplayBox {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+#highlightedGiftsDisplayBox h3 {
+    
+    font-size: 8vw; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体粗细 */
+}
+
+#highlightedGiftsDisplayBox p {
+    
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+#礼物兑换部分 .exchange_model {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    font-family: SimSun, sans-serif;
+    background-color: #ee9ca7;
+    text-align: center;
+    margin-top: 20%;
+    flex-direction: column; /* 垂直布局 */
+    margin-bottom: 40%;
+}
+
+.exchange_model h3 {
+    color: white;
+    font-size: 8vw; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体粗细 */
+}
+
+.summitorcancel {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    font-family: SimSun, sans-serif;
+    height: 20%;
+}
+
+.summitorcancel button{
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    font-family: SimSun, sans-serif;
+    height: 100%;
+    width: 30%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.exchange_model {
+    display: none; /* 初始状态隐藏 */
+}

@@ -1,0 +1,260 @@
+
+
+/* 抽奖部分 */
+#choosegift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255,255,255,0);
+    padding: 1%;
+    border-radius: 8%;
+    margin: 0 auto;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255,255,255,0);
+    padding: 3%;
+    border-radius: 8%;
+    margin: 0 auto;
+}
+
+#wheel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2%;
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0);
+    border-radius: 20%;
+}
+
+    .cell img {
+        width: 90%;
+        height: 90%;
+        border-radius: 15%;
+    }
+
+#selectedCell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle at center, transparent 0%, transparent 0%, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 60%, transparent 60%, transparent 100%);
+    cursor: pointer;
+    font-size: 3vw;
+    
+}
+
+#lotteryChancesDisplay {
+    font-size: 1vw;
+}
+
+
+/* 礼物池部分 */
+#gifts_pool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: 70%;
+    padding: 1%;
+    margin-right: 15%;
+}
+
+#gifts_selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    padding: 6%;
+    border-radius: 20px;
+}
+
+#gifts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-grow: 0; /* 防止子元素相对于父容器的大小随着可用空间改变 */
+    border-radius: 6px;
+}
+
+    #gifts h2 {
+        font-size: 2.5vw;
+        margin: 0 auto;
+    }
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 9%;
+    background-color: rgba(255,255,255,0.5);
+    margin: 1% auto;
+    padding: 0.2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+    .text-container p {
+        text-align: center;
+        
+        font-size: 1.5vw;
+        line-height: 1;
+    }
+
+#exchange {
+    margin-top: auto;
+    text-align: center;
+}
+
+
+#exchangeButton,
+#getMoreChancesButton {
+    font-size: 1vw;
+    font-family: SimSun, sans-serif;
+    padding: 1%;
+    width: 32%; /* 设置按钮的宽度 */
+    height: auto;
+    margin-right: 10%; /* 设置按钮之间的间距 */
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+#gifts_selected .highlighted {
+    background-color: #FFD700; /* 请替换成你想要的高亮颜色 */
+    color: #000000; /* 请替换成你想要的高亮文字颜色 */
+    font-weight: bold;
+}
+
+# 拼图部分 #game {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 2 auto;
+    position: relative;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    margin: 2% auto;
+    position: relative;
+}
+
+    .box .sz {
+        width: 97px;
+        height: 97px;
+        background: #ecc;
+        border: 0px #cec solid;
+        position: absolute;
+        font-size: 40px;
+        line-height: 90px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+        .box .sz img {
+        width: 100%;
+        height: 100%;
+        /* 其他样式属性 */
+    }
+
+        .box .sz.kong {
+            border: 2px transparent solid;
+            background: transparent;
+        }
+
+.btnbox {
+    text-align: center;
+    padding-top: 20px;
+}
+
+    .btnbox .time {
+        color: white;
+    }
+
+    .btnbox .jieguo {
+        color: red;
+    }
+
+#btn {
+    text-align: center;
+    margin: 0 auto;
+        background-color: rgba(255,255,255,0.5);
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+        background-color: rgba(255,255,255,0.5);
+}
+
+#game {
+    display: none;
+}
+
+
+# 礼物兑换部分 .exchange_model {
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    margin: 50px;
+    display: none; /* 初始状态隐藏 */
+}
+
+.exchange_model h3 {
+    font-size: 24px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体粗细 */
+}
+
+label {
+    
+    font-size: 18px;
+}
+
+
+.exchange_model {
+    display: none; /* 初始状态隐藏 */
+}
+
+
+# 待兑换礼物部分 #highlightedGiftsDisplayBox {
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+#highlightedGiftsDisplayBox h3 {
+    
+    font-size: 24px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体粗细 */
+}
+
+#highlightedGiftsDisplayBox p {
+    
+    font-size: 16px;
+    margin-bottom: 5px;
+}

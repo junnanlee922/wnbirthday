@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            font-family: 'SimSun', '宋体', sans-serif; /* 中文文本的字体设置 */
+            background-image: url('./img/cover/phone.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 70%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20%;
+        }
+
+            .login-container h2 {
+                font-family: 'Times New Roman', Times, serif; /* 英文文本的字体设置 */
+                color: #333;
+                font-size: 9vw;
+            }
+
+            .login-container form {
+                width: 80%;
+                height: auto;
+            }
+
+            .login-container input {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                margin-top: 8%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            .login-container select {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                margin-top: 8%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            .login-container button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 7%;
+                margin-bottom: 5%;
+            }
+
+                .login-container button:hover {
+                    background-color: #45a049;
+                }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Happy Birthday</h2>
+        <form action="your-login-endpoint" method="post">
+            <select id="favorite" name="favorite" required>
+                <option value="" disabled selected>选择问题回答</option>
+                <option value="option1">你男朋友是？</option>
+                <option value="option2">初见的日子？</option>
+                <option value="option3">恋爱纪念日？</option>
+            </select>
+            <br>
+            <input id="pwd" type="password" name="password" placeholder="Answer" required>
+            <br>
+            <button type="submit" id="Login">Login</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("Login").addEventListener("click", function (event) {
+                event.preventDefault();
+
+                var selectedOption = document.getElementById("favorite").value;
+                var answer = document.getElementById("pwd").value; // 修正此处的 ID
+
+                // 根据选择的问题检查答案并给出提示
+                if (selectedOption === "option1") {
+                    if (answer !== "LJN") {
+                        alert("提示：姓名首字母（三位大写）");
+                    } else {
+                        alert("回答对了，带你一起看看，他记忆中的故事吧！");
+                        window.location.href = "eleword.html";
+                    }
+                } else if (selectedOption === "option2") {
+                    if (answer !== "20220920") {
+                        alert("提示：8位数字的日期");
+                    } else {
+                        alert("回答对了，让我们往后看看，初见之后都发生了什么吧！");
+                        window.location.href = "eleword.html";
+                    }
+                } else if (selectedOption === "option3") {
+                    if (answer !== "0218") {
+                        alert("提示：4位数字的日期");
+                    } else {
+                        alert("回答对了，那就重新感受一下这甜甜的恋爱吧");
+                        window.location.href = "eleword.html";
+                    }
+                } else {
+                    alert("得先选择一个问题哟！！！");
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
+

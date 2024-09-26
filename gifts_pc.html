@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/gifts_pc.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: row; 
+            background-image: url('./img/cover/pc.jpg'); /* 替换 'path/to/your/image.jpg' 为你的图片路径 */
+            background-size: cover; /* 控制背景图片的尺寸，cover 表示图片将被裁切并保持宽高比填充整个容器 */
+            background-position: center; /* 控制背景图片的位置，这里设置为居中 */
+            backdrop-filter: blur(20px);
+            font-family: 'SimSun', '宋体', sans-serif; /* 中文文本的字体设置 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--拼图模块-->
+    <div id="game">
+    <div class="box"></div><!--游戏容器-->
+    <div class="btnbox">
+        <div class="time">0</div><!--计时展示区-->
+        <div class="jieguo"></div><!--结果展示区-->
+        <div>
+            <button id="ago">基础关卡</button><!--开始结束按钮-->
+            <button id="later">高级关卡</button><!--开始结束按钮-->
+            <button id="ret">返回抽奖</button><!--开始结束按钮-->
+        </div>
+        <button id="btn"></button><!--开始结束按钮-->
+    </div>
+    </div>
+
+    <!--抽奖模块-->
+    <div id="choosegift">
+    <div id="container">
+    <div id="wheel">
+        <div class="cell"><img src="img/game/raffle/1.jpg" alt="Image 1"></div>
+        <div class="cell"><img src="img/game/raffle/2.jpg" alt="Image 2"></div>
+        <div class="cell"><img src="img/game/raffle/3.jpg" alt="Image 3"></div>
+        <div class="cell"><img src="img/game/raffle/4.gif" alt="Image 4"></div>
+      <div class="cell"  id="selectedCell">
+        <div>抽奖</div>
+        <div id="lotteryChancesDisplay"></div>
+      </div>
+        <div class="cell"><img src="img/game/raffle/5.gif" alt="Image 5"></div>
+        <div class="cell"><img src="img/game/raffle/6.jpg" alt="Image 6"></div>
+        <div class="cell"><img src="img/game/raffle/7.jpg" alt="Image 7"></div>
+        <div class="cell"><img src="img/game/raffle/8.jpg" alt="Image 8"></div>
+    </div>
+    </div>
+    </div>
+
+   <!--礼物池模块-->
+    <div id="gifts_pool">
+        <div id="gifts_selected">
+            <div id="gifts">
+                <h2>礼物池</h2>
+                        <div class="text-container">
+                            <p>"生"盲盒一个</p>
+                        </div>
+                        <div class="text-container">
+                            <p>范琦银饰手链</p>
+                        </div>
+                        <div class="text-container">
+                            <p>"日"盲盒一个</p>
+                        </div>
+                        <div class="text-container">
+                            <p>爱的甜蜜抱抱</p>
+                        </div>
+                        <div class="text-container">
+                            <p>爱的甜蜜亲亲</p>
+                        </div>
+                        <div class="text-container">
+                            <p>"快"盲盒一个</p>
+                        </div>
+                        <div class="text-container">
+                            <p>黑松露托特包</p>
+                        </div>
+                        <div class="text-container">
+                            <p>"乐"盲盒一个</p>
+                        </div>
+                    </div>
+                </div>
+        <div id="exchange">
+            <button id="exchangeButton" onclick="exchangeGift()">兑换现有礼物</button>
+            <button id="getMoreChancesButton" onclick="getMoreChances()">更多抽奖机会</button>
+        </div>
+    </div>
+
+    <!--礼物兑换模块-->
+    <div id="highlightedGiftsDisplayBox"></div>
+    <div class="exchange_model">
+        <h3>确认兑换以下礼物</h3>
+        <div class="summitorcancel" id="summitorcancel">
+            <button type="button" id="summitConfirm" onclick="submitForm()">提交</button>
+            <button type="button" id="summitCancel" onclick="retRaffle()">取消</button>
+        </div>
+    </div>
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/gifts_pc.js"></script>
+</body>
+
+</html>

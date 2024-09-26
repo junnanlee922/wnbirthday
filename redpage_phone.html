@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+    <title>Happy Birthday</title>
+    <style>
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('img/cover/phone.jpg');
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(20px);
+        }
+        .warpper1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 75%;
+            height: 100%;
+        } 
+        .red-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 8%;
+        }
+
+            .red-box img {
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+            }
+
+        .rotating-disk {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 27%;
+            aspect-ratio: 1 / 1;
+            background-color: #ebcd99;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            transform-style: preserve-3d;
+            margin-top: 70%;
+            font-family: SimSun, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .text-overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12vw;
+            color: black;
+            margin: 0;
+        }
+        .circle1 {
+            width: 12%;
+            aspect-ratio: 1 / 1;
+            background-color: rgba(255, 255, 255, 0); /* 设置背景颜色，带有透明度 */
+            border-radius: 50%; /* 圆形 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; /* 添加鼠标指针样式 */
+            border: 4px solid #d6b065;
+            margin-top: 10%;
+        }
+
+            .circle1 span {
+                font-size: 5vw;
+                color: #d6b065;
+            }
+
+        .warpper2 {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 75%;
+            height: 100%;
+        }
+
+        .red-box-opened {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 8%;
+        }
+
+            .red-box-opened img {
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+            }
+        .times {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15vw;
+            color: #d6b065;
+            width: 20%;
+            aspect-ratio: 1 / 1;
+            margin-right: 18%;
+            margin-bottom: 11%;
+            font-family: SimSun, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            z-index: 1;
+        }
+        .detials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 10%;
+            top: 70%;
+            position: absolute;
+            z-index: 1;
+        }
+        .circle2 {
+            width: 30%;
+            height:auto;
+            background-color: rgba(255, 255, 255, 0); /* 设置背景颜色，带有透明度 */
+            border-radius: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; /* 添加鼠标指针样式 */
+            border: 4px solid #d6b065;
+            margin-top: 10%;
+        }
+
+            .circle2 span {
+                font-size: 5vw;
+                color: #d6b065;
+            }
+    </style>
+</head>
+<body>
+    <div class="warpper1" id="warpper1">
+        <div class="red-box">
+            <img src="./img/redpage/aa.jpg" alt="Your Image">
+            <div class="rotating-disk" onclick="startRotation()">
+                <div class="text-overlay">開</div>
+            </div>
+        </div>
+        <div class="circle1" onclick="stopget()">
+            <span>X</span>
+        </div>
+    </div>
+
+    <div class="warpper2" id="warpper2">
+        <div class="red-box-opened">
+            <img src="./img/redpage/bb.jpg" alt="Your Image">
+            <div class="times" id="randomNumber"></div>
+            <div class="detials" onclick="checkdetails()"></div>
+        </div>
+        <div class="circle2" onclick="stopget2()">
+            <span>去抽奖</span>
+        </div>
+    </div>
+        <script>
+            function startRotation() {
+                var rotatingDisk = document.querySelector('.rotating-disk');
+                rotatingDisk.style.animation = 'rotate 1s linear infinite';
+                setTimeout(function () {
+                    var audio = new Audio('./music/红包.mp3');
+                    audio.play();
+                }, 800);
+                setTimeout(function () {
+                    rotatingDisk.style.animation = 'none';
+                    showRandomNumber();
+                    switchWarppers();
+                }, 1500);
+            }
+
+            function stopget() {
+                var stopred = document.querySelector('circle');
+                var userConfirmed1 = window.confirm('确定不打开这个红包？');
+                if (userConfirmed1) {
+                    var userConfirmed2 = window.confirm('不打开就没有生日礼物的哟');
+                    if (userConfirmed2) {
+                        var userConfirmed3 = window.confirm('最后确认一次');
+                        if (userConfirmed3) {
+                            alert("你与我精心准备的礼物失之交臂。。。")
+                            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                            var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+                            if (screenHeight > screenWidth) {
+                                window.location.href = 'lunbotu_phone.html';
+                            } else {
+                                window.location.href = 'lunbotu_pc.html';
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            function showRandomNumber() {
+                var randomNumberElement = document.getElementById('randomNumber');
+                var randomValue = Math.floor(Math.random() * (6 - 2 + 1)) + 2; // 生成2-6的随机数
+                randomNumberElement.textContent = randomValue;
+                localStorage.setItem('randomLotteryChances', randomValue.toString());
+            }
+
+            function switchWarppers() {
+                var warpper1 = document.getElementById('warpper1');
+                var warpper2 = document.getElementById('warpper2');
+                warpper1.style.display = 'none';
+                warpper2.style.display = 'flex';
+            }
+
+            function checkdetails() {
+                // 这里添加您跳转页面的逻辑
+                alert('你怕不是憨憨哦，还真看这个');
+            }
+            function stopget2() {
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+                if (screenHeight > screenWidth) {
+                    window.location.href = 'gifts_phone.html';
+                } else {
+                    window.location.href = 'gifts_pc.html';
+                }
+            }
+            
+        </script>
+</body>
+</html>

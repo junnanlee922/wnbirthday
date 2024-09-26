@@ -1,0 +1,923 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+    <title>our memories</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/memories_pc.css" />
+    <style>
+        body {
+            background-image: url('./img/cover/pc.jpg'); /* 替换 'path/to/your/image.jpg' 为你的图片路径 */
+            background-size: cover; /* 控制背景图片的尺寸，cover 表示图片将被裁切并保持宽高比填充整个容器 */
+            background-position: center; /* 控制背景图片的位置，这里设置为居中 */
+            backdrop-filter: blur(20px);
+            font-family: 'SimSun', '宋体', sans-serif; /* 中文文本的字体设置 */
+        }
+        .music-button {
+            position: absolute;
+            top: 2%;
+            right: 1%;
+            height: 8%;
+            aspect-ratio: 1 / 1;
+            background-color: rgba(255,255,255,0);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            animation: rotate 5s linear infinite; /* 添加旋转动画，持续5秒，线性变化，无限循环 */
+            margin: 0;
+            border: 2px solid white;
+            z-index: 1000;
+        }
+
+        .m1 {
+            display: none;
+            width: 70%;
+            aspect-ratio: 1 / 1;
+        }
+
+        .m2 {
+            display: flex;
+            width: 70%;
+            aspect-ratio: 1 / 1;
+        }
+
+        .imgm1,
+        .imgm2 {
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="music-button" onclick="toggleMusic()">
+        <div class="m1"><img class="imgm1" src="img/memories/音乐.png" /></div>
+        <div class="m2"><img class="imgm2" src="img/memories/禁止音乐.png" /></div>
+    </div>
+    <!-- 音频元素 -->
+    <audio id="audioPlayer" src="music/有点甜.mp3" loop autoplay></audio>
+    <div class="bgcolor">
+        <div style="z-index: 100" id="dowebok">
+            <!--第0屏-->
+            <!--第1屏-->
+            <div class="section">
+                <div class="ly-box11">
+                    <div class="ly-t11">
+                        <div class="ly-txt11">故事的开始</div>
+                        <div class="ly-stxt11">
+                            <p>时间：2022年9月20日</p>
+                            <p>地点：重庆邮电大学明理8舍楼下</p>
+                            <p>人物：王同学,李同学</p>
+                            <p>事件：李同学帮王同学搬行李到宿舍</p>
+                            <p>感想：腿真白,造型挺飒,性格不错,长得还行</p>
+                            <p>ps：上9楼真的累啊！！！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ly-imgbox11">
+                    <img class="ly-img11" src="img/memories/故事开始.gif" />
+                </div>
+            </div>
+
+            <!--第2屏-->
+            <div class="section">
+                <div class="ly-box21">
+                    <div class="ly-t21">
+                        <div class="ly-txt21">2022-10-01</div>
+                        <div class="ly-stxt21">
+                            <p>第一次一起出去玩</p>
+                            <p>虽然不是二人世界</p>
+                            <p>但不影响我了解你</p>
+                            <p>也不影响你让我帮你背包</p>
+                            <p>不过这个包现在是我的了</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox21">
+                        <img class="ly-img21" src="img/memories/221001欢乐谷.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box22">
+                    <div class="ly-t22">
+                        <div class="ly-txt22">2022-12-01</div>
+                        <div class="ly-stxt22">
+                            <p>不记得这天发生了什么吧</p>
+                            <p>这天咱两彻夜长谈</p>
+                            <p>叭叭了一晚上</p>
+                            <p>人都整萎了</p>
+                            <p>不过从这个时候开始</p>
+                            <p>对你的了解逐渐深入了</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox22">
+                        <img class="ly-img22" src="img/memories/221201聊通宵.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box23">
+                    <div class="ly-t23">
+                        <div class="ly-txt23">2022-12-07</div>
+                        <div class="ly-stxt23">
+                            <p>写完了稻香的初稿</p>
+                            <p>我们一起到八教下面的楼梯弹曲子</p>
+                            <p>我还背着吉他，装了一波文艺</p>
+                            <p>回去就发了朋友圈</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox23">
+                        <img class="ly-img23" src="img/memories/221207.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第3屏-->
+            <div class="section">
+                <div class="ly-box31">
+                    <div class="ly-t31">
+                        <div class="ly-txt31">2022-12-11</div>
+                        <div class="ly-stxt31">
+                            <p>晚上在你实验室整了两口泸州老窖</p>
+                            <p>没喝尽兴，又买了两瓶二锅头</p>
+                            <p>边荡秋千边喝</p>
+                            <p>第二天，你直接吐到出不了寝室</p>
+                            <p>整的我可愧疚了</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox31">
+                        <img class="ly-img31" src="img/memories/221211泸州老窖.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box32">
+                    <div class="ly-t32">
+                        <div class="ly-txt32">2022-12-17</div>
+                        <div class="ly-stxt32">
+                            <p>一起探索了重邮的后山</p>
+                            <p>一路往高处走，直接走出了学校范围</p>
+                            <p>爬白耳山步道，凉亭憩美景享</p>
+                            <p>还故意吓你，让你靠紧我，嘿嘿</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox32">
+                        <img class="ly-img32" src="img/memories/221217.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box33">
+                    <div class="ly-t33">
+                        <div class="ly-txt33">2022-12-20</div>
+                        <div class="ly-stxt33">
+                            <p>一起在经管楼边上的草坪</p>
+                            <p>晒太阳，听张震岳的《小宇》</p>
+                            <p>看带嘴套的修狗在地上打滚</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox33">
+                        <img class="ly-img33" src="img/memories/221220.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第4屏-->
+            <div class="section">
+                <div class="ly-box41">
+                    <div class="ly-t41">
+                        <div class="ly-txt41">2023-02-08</div>
+                        <div class="ly-stxt41">
+                            <p>农历正月十八，你的生日</p>
+                            <p>给你改编了个歌词《菊花台》</p>
+                            <p>专门学了口琴，吹伴奏</p>
+                            <p>还写了个古文祝福语</p>
+                            <p>最后剪了个视频</p>
+                            <p>卡点给你送上</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox41">
+                        <img class="ly-img41" src="img/memories/2302081.jpg" />
+                    </div>
+                </div>
+                <div class="ly-imgbox42">
+                    <img class="ly-img42" src="img/memories/2302082.jpg" />
+                </div>
+            </div>
+
+
+            <!--第5屏-->
+            <div class="section">
+                <div class="ly-box51">
+                    <div class="ly-t51">
+                        <div class="ly-txt51">2023-02-15</div>
+                        <div class="ly-stxt51">
+                            <p>这是我们两人第一次单独下山玩</p>
+                            <p>一直走走走</p>
+                            <p>逛来福士、洪崖洞</p>
+                            <p>江滩捡石子，打水漂</p>
+                            <p>开心是开心，就是有点费脚</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox511">
+                        <img class="ly-img511" src="img/memories/2302151.jpg" />
+                    </div>
+                </div>
+                <div class="ly-imgbox512">
+                    <img class="ly-img512" src="img/memories/2302152.jpg" />
+                </div>
+
+                <div class="ly-box52">
+                    <div class="ly-t52">
+                        <div class="ly-txt52">2023-02-16</div>
+                        <div class="ly-stxt52">
+                            <p>一起到南滨路吹风，喝茶聊天，还给你折青蛙，折爱心</p>
+                            <p>本来当晚想表白来着，但话说到嘴边总是咽回去了</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox52">
+                        <img class="ly-img52" src="img/memories/230216.jpg" />
+                    </div>
+                </div>
+            </div>
+
+
+            <!--第6屏-->
+            <div class="section">
+                <div class="ly-box61">
+                    <div class="ly-t61">
+                        <div class="ly-txt61">2023-02-18</div>
+                        <div class="ly-stxt61">
+                            <p>我们的恋爱纪念日</p>
+                            <p>不要怪我太草率哈</p>
+                            <p>第一回面对面正式表白</p>
+                            <p>当时确实是有点紧张</p>
+                            <p>完全不记得要拍照纪念的事</p>
+                            <p>就找到这么张破玩意</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox61">
+                        <img class="ly-img61" src="img/memories/230218表白日.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box62">
+                    <div class="ly-t62">
+                        <div class="ly-txt62">2023-02-26</div>
+                        <div class="ly-stxt62">
+                            <p>今天一起去中央公园</p>
+                            <p>草地上，吹泡泡</p>
+                            <p>广场上，看人放风筝</p>
+                            <p>大草坪，看人拍婚纱照</p>
+                            <p>22721步，我宝的jiojio都起泡泡了</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox62">
+                        <img class="ly-img62" src="img/memories/230226.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box63">
+                    <div class="ly-t63">
+                        <div class="ly-txt63">2023-03-01</div>
+                        <div class="ly-stxt63">
+                            <p>换情侣头像</p>
+                            <p>大半夜的，我挑了十几张</p>
+                            <p>凌晨1点才选定这个</p>
+                            <p>即便是形式上的东西</p>
+                            <p>我也愿意积极的去做</p>
+                            <p>想要你感受到安全</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox63">
+                        <img class="ly-img63" src="img/memories/230301.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第7屏-->
+            <div class="section">
+                <div class="ly-box71">
+                    <div class="ly-t71">
+                        <div class="ly-txt71">2023-03-04</div>
+                        <div class="ly-stxt71">
+                            <p>在北仓一起做情侣对戒</p>
+                            <p>ps: 你把我的戒指图案刻歪了</p>
+                            <p>刻完之后各自写上情话</p>
+                            <p>最后还搞了个火漆</p>
+                            <p>但我戴了两天就被你拿走了</p>
+                            <p>嫌丑。。。</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox71">
+                        <img class="ly-img71" src="img/memories/230304.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box72">
+                    <div class="ly-t72">
+                        <div class="ly-txt72">2023-04-09</div>
+                        <div class="ly-stxt72">
+                            <p>逛动物园</p>
+                            <p>一起看了好多没见过的动物</p>
+                            <p>我第一次见到熊猫</p>
+                            <p>还有这个可可爱爱的小东西</p>
+                            <p>可惜没留下咱俩的合照</p>
+                        </div>
+                        <div class="ly-imgbox72">
+                            <img class="ly-img72" src="img/memories/230409.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="ly-box73">
+                    <div class="ly-t73">
+                        <div class="ly-txt73">2023-04-20</div>
+                        <div class="ly-stxt73">
+                            <p>一起吃日料</p>
+                            <p>弹子石边上的幸月居酒屋</p>
+                            <p>脱鞋进去的日式小包厢</p>
+                            <p>一小壶梅子酒</p>
+                            <p>浪漫的约会氛围一下就来了</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox73">
+                        <img class="ly-img73" src="img/memories/230420.jpg" />
+                    </div>
+                </div>
+            </div>
+
+
+            <!--第8屏-->
+            <div class="section">
+                <div class="ly-box81">
+                    <div class="ly-t81">
+                        <div class="ly-txt81">2023-05-01</div>
+                        <div class="ly-stxt81">
+                            <p>陪你做一些奇奇怪怪的事情</p>
+                            <p>大马路上，扭着身躯比爱心</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox81">
+                        <img class="ly-img81" src="img/memories/230501.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box82">
+                    <div class="ly-t82">
+                        <div class="ly-txt82">2023-05-02</div>
+                        <div class="ly-stxt82">
+                            <p>第一次去龙湖</p>
+                            <p>第一次给你送花</p>
+                            <p>第一次吃哈根达斯</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox82">
+                        <img class="ly-img82" src="img/memories/230502.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box83">
+                    <div class="ly-t83">
+                        <div class="ly-txt83">2023-05-03</div>
+                        <div class="ly-stxt83">
+                            <p>南山植物园</p>
+                            <p>坐公交高高兴兴的去</p>
+                            <p>好看的植物一个没见着</p>
+                            <p>还热的嗷嗷叫</p>
+                            <p>啥也不是。。。</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox83">
+                        <img class="ly-img83" src="img/memories/230503植物园.jpg" />
+                    </div>
+                </div>
+            </div>
+
+
+            <!--第9屏-->
+            <div class="section">
+
+                <div class="ly-box91">
+                    <div class="ly-t91">
+                        <div class="ly-txt91">2023-05-20</div>
+                        <div class="ly-stxt91">
+                            <p>这是我们的第一个520</p>
+                            <p>看了速度与激情10</p>
+                            <p>吃了集渔泰式海鲜火锅</p>
+                            <p>逛了里面有花园的光环购物广场</p>
+                            <p>至于520礼物</p>
+                            <p>你收到了</p>
+                            <p>ck小方包，口红和香水小样</p>
+                            <p>还有我亲手折的小花花</p>
+                            <p>我收到了</p>
+                            <p>一直想要的往复式刮胡刀</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ly-imgbox91">
+                    <img class="ly-img91" src="img/memories/230520.jpg" />
+                </div>
+
+
+                <div class="ly-box92">
+                    <div class="ly-t92">
+                        <div class="ly-txt92">2023-05-27</div>
+                        <div class="ly-stxt92">
+                            <p>第一次有了属于我们的情侣装</p>
+                            <p>我米色，你绿色</p>
+                            <p>希望以后还能有很多很多</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox92">
+                        <img class="ly-img92" src="img/memories/230527.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box93">
+                    <div class="ly-t93">
+                        <div class="ly-txt93">2023-06-23</div>
+                        <div class="ly-stxt93">
+                            <p>陪你看了你一直想看的电影</p>
+                            <p>朱一龙的《消失的她》</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox93">
+                        <img class="ly-img93" src="img/memories/230623.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第10屏-->
+            <div class="section">
+                <div class="ly-box101" id="box101">
+                    <div class="ly-t101">
+                        <div class="ly-txt101">2023-06-24</div>
+                        <div class="ly-stxt101">
+                            <p>吃了仪式感满满的惠灵顿，大中午点着烛光吃</p>
+                            <p>逛了不算大的海洋馆，看了美人鱼和水下奥特曼</p>
+                        </div>
+                        <button class="play-button102" onclick="playVideo102()">水族馆的视频，点击播放</button>
+                    </div>
+                    <div class="ly-imgbox101">
+                        <img class="ly-img101" src="img/memories/230624.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box102" id="box102">
+                    <div class="ly-videobox102">
+                        <video class="ly-video102" controls>
+                            <source src="img/memories/video/230624.mp4" type="video/mp4">
+                            <source src="img/memories/video/230624.webm" type="video/webm">
+                            <source src="img/memories/video/230624.ogg" type="video/ogg">
+                            <source src="img/memories/video/230624.3gp" type="video/3gp">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <button class="ret102" onclick="ret102()">返回</button>
+                </div>
+                <script>
+                    var musicButton = document.querySelector('.music-button');
+                    var audioPlayer = document.getElementById('audioPlayer');
+                    function playVideo102() {
+                        var box102 = document.getElementById('box102');
+                        var box101 = document.getElementById('box101');
+                        var box103 = document.getElementById('box103');
+                        audioPlayer.pause();
+                        $.fn.fullpage.setAllowScrolling(false);
+                        box102.style.display = 'flex';
+                        box101.style.display = 'none';
+                        box103.style.display = 'none';
+                        musicButton.style.display = 'none';
+                    }
+                    function ret102() {
+                        var box102 = document.getElementById('box102');
+                        var box101 = document.getElementById('box101');
+                        var box103 = document.getElementById('box103');
+                        var m1Element = document.querySelector('.m1');
+                        var m1DisplayStyle = window.getComputedStyle(m1Element);
+                        if (m1DisplayStyle.display === 'flex') {
+                            // 恢复音乐播放
+                            audioPlayer.play();
+                        }
+                        $.fn.fullpage.setAllowScrolling(true);
+                        box102.style.display = 'none';
+                        box101.style.display = 'flex';
+                        box103.style.display = 'flex';
+                        musicButton.style.display = 'flex';
+                    }
+                </script>
+
+                <div class="ly-box103" id="box103">
+                    <div class="ly-t103">
+                        <div class="ly-txt103">2023-07-01</div>
+                        <div class="ly-stxt103">
+                            <p>打卡《少年的你》取景地</p>
+                            <p>海棠溪筒子楼</p>
+                            <p>还在海棠溪里面转了一圈</p>
+                            <p>这里的烟火气真是足足的</p>
+                            <p>这离学校挺近的</p>
+                            <p>但之前疫情，一直没开放</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox103">
+                        <img class="ly-img103" src="img/memories/230701.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第11屏-->
+            <div class="section">
+
+                <div class="ly-box111" id="box111">
+                    <div class="ly-t111">
+                        <div class="ly-txt111">2023-07-20</div>
+                        <div class="ly-stxt111">
+                            <p>武隆仙女山，第一次一起出来旅游</p>
+                            <p>看大草坪，坐小火车，拔草喂小羊，撑支架拍照</p>
+                        </div>
+                        <button class="play-button112" onclick="playVideo112()">仙女山的视频，点击播放</button>
+                    </div>
+
+                    <div class="ly-imgbox111">
+                        <img class="ly-img111" src="img/memories/230720.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box112" id="box112">
+                    <div class="ly-videobox112">
+                        <video class="ly-video112" controls>
+                            <source src="img/memories/video/230720.mp4" type="video/mp4">
+                            <source src="img/memories/video/230720.webm" type="video/webm">
+                            <source src="img/memories/video/230720.ogg" type="video/ogg">
+                            <source src="img/memories/video/230720.3gp" type="video/3gp">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <button class="ret112" onclick="ret112()">返回</button>
+                </div>
+                <script>
+                    var musicButton = document.querySelector('.music-button');
+                    var audioPlayer = document.getElementById('audioPlayer');
+                    function playVideo112() {
+                        var box112 = document.getElementById('box112');
+                        var box111 = document.getElementById('box111');
+                        var box113 = document.getElementById('box113');
+                        audioPlayer.pause();
+                        $.fn.fullpage.setAllowScrolling(false);
+                        box112.style.display = 'flex';
+                        box111.style.display = 'none';
+                        box113.style.display = 'none';
+                        musicButton.style.display = 'none';
+                    }
+                    function ret112() {
+                        var box112 = document.getElementById('box112');
+                        var box111 = document.getElementById('box111');
+                        var box113 = document.getElementById('box113');
+                        var m1Element = document.querySelector('.m1');
+                        var m1DisplayStyle = window.getComputedStyle(m1Element);
+                        if (m1DisplayStyle.display === 'flex') {
+                            // 恢复音乐播放
+                            audioPlayer.play();
+                        }
+                        $.fn.fullpage.setAllowScrolling(true);
+                        box112.style.display = 'none';
+                        box111.style.display = 'flex';
+                        box113.style.display = 'flex';
+                        musicButton.style.display = 'flex';
+                    }
+                </script>
+
+                <div class="ly-box113" id="box113">
+                    <div class="ly-t113">
+                        <div class="ly-txt113">2023-07-21</div>
+                        <div class="ly-stxt113">
+                            <p>天生三桥，龙水峡地缝，地貌震撼</p>
+                            <p>没拍好照，某人闹了会情绪，好一顿哄</p>
+                            <p>后面还下大雨，搞的两人双双湿身</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox113">
+                        <img class="ly-img113" src="img/memories/230721.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第12屏-->
+            <div class="section">
+
+                <div class="ly-box121">
+                    <div class="ly-t121">
+                        <div class="ly-txt121">2023-07-23</div>
+                        <div class="ly-stxt121">
+                            <p>我出发去北京实习</p>
+                            <p>送我登机前</p>
+                            <p>吃了顿庖丁家牛肆</p>
+                            <p>我记得出发的前一天</p>
+                            <p>某人看到我的行李</p>
+                            <p>还哭鼻子来着</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox121">
+                        <img class="ly-img121" src="img/memories/230723.jpg" />
+                    </div>
+                </div>
+
+
+
+                <div class="ly-box123">
+                    <div class="ly-t123">
+                        <div class="ly-txt123">2023-09-14</div>
+                        <div class="ly-stxt123">
+                            <p>今天实习回来</p>
+                            <p>本以为要挺久</p>
+                            <p>但耐不住太想你</p>
+                            <p>借着找工作的借口</p>
+                            <p>果断飞回来</p>
+                            <p>一解我的相思之苦</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox123">
+                        <img class="ly-img123" src="img/memories/230914.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box124">
+                    <div class="ly-t124">
+                        <div class="ly-txt124">2023-09-19</div>
+                        <div class="ly-stxt124">
+                            <p>晚上你到我实验室</p>
+                            <p>拿了一大盒剥好的石榴籽</p>
+                            <p>我第一眼还以为是花生米</p>
+                            <p>给我感动的呀</p>
+                            <p>回到寝室第一件事</p>
+                            <p>就果断的发了个朋友圈</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox124">
+                        <img class="ly-img124" src="img/memories/230919.jpg" />
+                    </div>
+                </div>
+                <div class="ly-box122">
+                    <div class="ly-t122">
+                        <div class="ly-txt122">2023-08-19</div>
+                        <div class="ly-stxt122">
+                            <p>七夕的前三天，拎着个端午粽子的袋子就直接冲向武乡</p>
+                            <p>逛纪念馆，公园，关河水库，两大超市；吃最辣的拌面</p>
+                            <p>武乡地方挺小，但整的挺好，就是可惜没看到剧院表演</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox122">
+                        <img class="ly-img122" src="img/memories/230819.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第13屏-->
+            <div class="section">
+                <div class="ly-box131">
+                    <div class="ly-t131">
+                        <div class="ly-txt131">2023-11-04</div>
+                        <div class="ly-stxt131">
+                            <p>农历9月21，我生日的前一天</p>
+                            <p>你晚上9点多把我叫出去给我过生日</p>
+                            <p>精心布置了个场地，做了一个网页</p>
+                            <p>还送了两个礼物</p>
+                            <p>这次生日过的，我可满意了</p>
+                            <p>用拍立得拍了不少照片</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox131">
+                        <img class="ly-img131" src="img/memories/2311041.jpg" />
+                    </div>
+                </div>
+                <div class="ly-imgbox132">
+                    <img class="ly-img132" src="img/memories/2311042.jpg" />
+                </div>
+            </div>
+
+            <!--第14屏-->
+            <div class="section">
+                <div class="ly-box141">
+                    <div class="ly-t141">
+                        <div class="ly-txt141">2023-12-05</div>
+                        <div class="ly-stxt141">
+                            <p>我家里有事，12月6号要回趟家，又是你给我送机</p>
+                            <p>前一天下山了，在小什字商场你给我买了个保暖背心</p>
+                            <p>在观音桥逛了挺久，吃了转转火锅，还玩了迷你桌球</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox141">
+                        <img class="ly-img141" src="img/memories/231205.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box142">
+                    <div class="ly-t142">
+                        <div class="ly-txt142">2023-12-23</div>
+                        <div class="ly-stxt142">
+                            <p>平安夜，圣诞节，一起给你安排，所有的仪式感全部给你</p>
+                            <p>准备的小惊喜到了，就直接提前全部给到你</p>
+                            <p>竹篮包，巧克力苹果，护手霜，唇膏，小零食。。。</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox142">
+                        <img class="ly-img142" src="img/memories/231223.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <!--第15屏-->
+            <div class="section">
+                <div class="ly-box151" id="box151">
+                    <div class="ly-t151">
+                        <div class="ly-txt151">2024跨年</div>
+                        <div class="ly-stxt151">
+                            <p>逛规划馆，看人造雪，逛灯会，看烟花。基本都没实现，不过下面的事足够记很久了</p>
+                            <p>打耳钉，看跨年晚会，大合唱，倒计时，悄咪咪的新年礼物让某人内疚到哭鼻子</p>
+                        </div>
+                    </div>
+                    <div class="ly-imgbox151">
+                        <img class="ly-img151" src="img/memories/2024跨年.jpg" />
+                    </div>
+                </div>
+
+                <div class="ly-box152" id="box152">
+                    <button class="play-button1521" onclick="playVideo1521()">提前倒计时<br>点击播放</button>
+                    <button class="play-button1522" onclick="playVideo1522()">广场倒计时<br>点击播放</button>
+                    <button class="play-button1523" onclick="playVideo1523()">《全是爱》凤凰传奇<br>点击播放</button>
+                    <button class="play-button1523" onclick="playVideo1524()">《当》动力火车<br>点击播放</button>
+                </div>
+
+                <div class="ly-box1521" id="box1521">
+                    <div class="ly-videobox1521">
+                        <video class="ly-video1521" controls>
+                            <source src="img/memories/video/24酒店跨年.mp4" type="video/mp4">
+                            <source src="img/memories/video/24酒店跨年.webm" type="video/webm">
+                            <source src="img/memories/video/24酒店跨年.ogg" type="video/ogg">
+                            <source src="img/memories/video/24酒店跨年.3gp" type="video/3gp">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <button class="ret15" onclick="ret15()">返回</button>
+                </div>
+
+                <div class="ly-box1522" id="box1522">
+                    <div class="ly-videobox1522">
+                        <video class="ly-video1522" controls>
+                            <source src="img/memories/video/24广场跨年.mp4" type="video/mp4">
+                            <source src="img/memories/video/24广场跨年.webm" type="video/webm">
+                            <source src="img/memories/video/24广场跨年.ogg" type="video/ogg">
+                            <source src="img/memories/video/24广场跨年.3gp" type="video/3gp">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <button class="ret15" onclick="ret15()">返回</button>
+                </div>
+
+                <div class="ly-box1523" id="box1523">
+                    <div class="ly-videobox1523">
+                        <video class="ly-video1523" controls>
+                            <source src="img/memories/video/24跨年全是爱.mp4" type="video/mp4">
+                            <source src="img/memories/video/24跨年全是爱.webm" type="video/webm">
+                            <source src="img/memories/video/24跨年全是爱.ogg" type="video/ogg">
+                            <source src="img/memories/video/24跨年全是爱.3gp" type="video/3gp">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <button class="ret15" onclick="ret15()">返回</button>
+                </div>
+
+                <div class="ly-box1524" id="box1524">
+                    <div class="ly-videobox1524">
+                        <video class="ly-video1524" controls>
+                            <source src="img/memories/video/24跨年当.mp4" type="video/mp4">
+                            <source src="img/memories/video/24跨年当.webm" type="video/webm">
+                            <source src="img/memories/video/24跨年当.ogg" type="video/ogg">
+                            <source src="img/memories/video/24跨年当.3gp" type="video/3gp">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <button class="ret15" onclick="ret15()">返回</button>
+                </div>
+
+                <script>
+                    var box151 = document.getElementById('box151');
+                    var box152 = document.getElementById('box152');
+                    var box1521 = document.getElementById('box1521');
+                    var box1522 = document.getElementById('box1522');
+                    var box1523 = document.getElementById('box1523');
+                    var box1524 = document.getElementById('box1524');
+                    var musicButton = document.querySelector('.music-button');
+                    var audioPlayer = document.getElementById('audioPlayer');
+
+                    function playVideo1521() {
+                        audioPlayer.pause();
+                        $.fn.fullpage.setAllowScrolling(false);
+                        box1521.style.display = 'flex';
+                        box151.style.display = 'none';
+                        box152.style.display = 'none';
+                        musicButton.style.display = 'none';
+                    }
+                    function playVideo1522() {
+                        audioPlayer.pause();
+                        $.fn.fullpage.setAllowScrolling(false);
+                        box1522.style.display = 'flex';
+                        box151.style.display = 'none';
+                        box152.style.display = 'none';
+                        musicButton.style.display = 'none';
+                    }
+                    function playVideo1523() {
+                        audioPlayer.pause();
+                        $.fn.fullpage.setAllowScrolling(false);
+                        box1523.style.display = 'flex';
+                        box151.style.display = 'none';
+                        box152.style.display = 'none';
+                        musicButton.style.display = 'none';
+                    }
+                    function playVideo1524() {
+                        audioPlayer.pause();
+                        $.fn.fullpage.setAllowScrolling(false);
+                        box1524.style.display = 'flex';
+                        box151.style.display = 'none';
+                        box152.style.display = 'none';
+                        musicButton.style.display = 'none';
+                    }
+                    function ret15() {
+                        var m1Element = document.querySelector('.m1');
+                        var m1DisplayStyle = window.getComputedStyle(m1Element);
+                        if (m1DisplayStyle.display === 'flex') {
+                            // 恢复音乐播放
+                            audioPlayer.play();
+                        }
+                        $.fn.fullpage.setAllowScrolling(true);
+                        box1521.style.display = 'none';
+                        box1522.style.display = 'none';
+                        box1523.style.display = 'none';
+                        box1524.style.display = 'none';
+                        box151.style.display = 'flex';
+                        box152.style.display = 'flex';
+                        musicButton.style.display = 'flex';
+                    }
+                </script>
+            </div>
+
+            <!--第n屏-->
+            <div class="section"></div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // 获取所有包含视频的元素
+                    var videoElements = document.querySelectorAll('video');
+
+                    // 创建 IntersectionObserver 实例
+                    var observer = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            // 根据可见性控制视频播放状态
+                            if (!entry.isIntersecting) {
+                                entry.target.pause(); // 不可见时暂停视频
+                            }
+                        });
+                    });
+                    // 观察每个视频元素
+                    videoElements.forEach(function (video) {
+                        observer.observe(video);
+                    });
+                });
+            </script>
+            <script>
+                function toggleMusic() {
+                    var musicButton = document.querySelector('.music-button');
+                    var m1 = musicButton.querySelector('.m1');
+                    var m2 = musicButton.querySelector('.m2');
+                    var audioPlayer = document.getElementById('audioPlayer');
+
+                    if (!audioPlayer.paused) {
+                        audioPlayer.pause();
+                        m1.style.display = 'none';
+                        m2.style.display = 'flex';
+                    } else {
+                        audioPlayer.play();
+                        m1.style.display = 'flex';
+                        m2.style.display = 'none';
+                    }
+                }
+            </script>
+
+            <script src="js/jquery-2.1.1.min.js"></script>
+            <script src="js/jquery.fullPage.min.js"></script>
+            <script src="js/memories.js"></script>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,2667 @@
+/***                                  内容区域                                 ***/
+.fp-tableCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/**                                   第1部分                                  **/
+.ly-date01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date01 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content01 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt01 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt01 p {
+        font-size: 5vw;
+        text-align: left;
+        line-height: 0;
+        text-indent: 1.5em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox01{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img01 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第2部分                                  **/
+.ly-date02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date02 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content02 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt02 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt02 p {
+        font-size: 5vw;
+        text-align: center;
+        line-height: 0.5;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox02 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img02 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第3部分                                  **/
+.ly-date03 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date03 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content03 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 85%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content03 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt03 {
+    display: flex;
+    width: auto;
+    height: 100%;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt03 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 1;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox03 {
+    display: flex;
+    width: auto;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img03 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第4部分                                  **/
+.ly-date04 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date04 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content04 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content04 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt04 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt04 p {
+        font-size: 5vw;
+        text-align: center;
+        line-height: 0.5;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox04 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img04 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/**                                        第5部分                                  **/
+.ly-date05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date05 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content05 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt05 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt05 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox05 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img05 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第6部分                                  **/
+.ly-date06 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date06 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content06 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content06 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt06 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt06 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 1;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox06 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img06 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第7部分                                  **/
+.ly-date07 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date07 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content07 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content07 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt07 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt07 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox07 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img07 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第8部分                                  **/
+.ly-date08 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date08 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content08 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content08 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt08 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt08 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0.8;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox08 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img08 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第9部分                                  **/
+.ly-date09 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date09 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content09 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 2%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content09 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt09 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt09 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox09 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img09 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第10部分                                  **/
+.ly-date10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date10 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content10 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt10 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt10 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox10 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img10 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第11部分                                  **/
+.ly-date11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date11 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content11 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt11 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt11 p {
+        font-size: 5vw;
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox11 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img11 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第12部分                                  **/
+.ly-date12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date12 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content12 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt12 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt12 p {
+        font-size: 5vw;
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox12 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img12 {
+    width: 100%;
+    height: 100%;
+}
+/**                                        第13部分                                  **/
+.ly-date13 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date13 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content13 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content13 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt13 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt13 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 1;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox13 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img13 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第14部分                                  **/
+.ly-date14 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date14 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content14 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content14 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt14 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt14 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox14 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img14 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第15部分                                  **/
+.ly-date15 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date15 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content15 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content15 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt15 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt15 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox15 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img15 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第16部分                                  **/
+.ly-date16 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date16 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content16 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content16 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt16 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt16 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0.5;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox16 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img16 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第17部分                                  **/
+.ly-date17 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date17 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content17 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content17 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt17 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt17 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 1;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox17 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img17 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第18部分                                  **/
+.ly-date18 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date18 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content18 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content18 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt18 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt18 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 1;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox18 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img18 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第19部分                                  **/
+.ly-date19 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date19 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content19 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 2%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content19 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt19 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt19 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox19 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img19 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第20部分                                  **/
+.ly-date20 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date20 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content20 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 2%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content20 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt20 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt20 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox20 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img20 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第21部分                                  **/
+.ly-date21 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date21 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content21 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content21 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt21 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt21 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox21 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img21 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第22部分                                  **/
+.ly-date22 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date22 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content22 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content22 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt22 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt22 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 1;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox22 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img22 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第23部分                                  **/
+.ly-date23 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date23 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content23 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content23 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt23 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt23 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox23 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img23 {
+    width: 100%;
+    height: 100%;
+}
+
+.play-button23 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    border-radius: 12px;
+    font-size: 4vw;
+    
+    margin-top: 5%;
+}
+.ly-content23v {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-content23v {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-videobox23 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.ly-video23 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.ret23 {
+    width: 15%;
+    height: auto;
+    margin-top: 5%;
+    font-size: 3vw;
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid #fff; /* 设置2px白色边框 */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/**                                        第24部分                                  **/
+.ly-date24 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date24 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content24 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content24 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt24 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt24 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox24 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img24 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第25部分                                  **/
+.ly-date25 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date25 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content25 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content25 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt25 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt25 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox25 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img25 {
+    width: 100%;
+    height: 100%;
+}
+
+.play-button25 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    border-radius: 12px;
+    font-size: 4vw;
+    
+    margin-top: 5%;
+}
+.ly-content25v {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-content25v {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-videobox25 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.ly-video25 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.ret25 {
+    width: 15%;
+    height: auto;
+    margin-top: 5%;
+    font-size: 3vw;
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid #fff; /* 设置2px白色边框 */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/**                                        第26部分                                  **/
+.ly-date26 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date26 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content26 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content26 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt26 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt26 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox26 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img26 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第27部分                                  **/
+.ly-date27 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date27 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content27 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content27 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt27 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt27 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox27 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img27 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第28部分                                  **/
+.ly-date28 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date28 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content28 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 2%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content28 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt28 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt28 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox28 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img28 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第29部分                                  **/
+.ly-date29 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date29 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content29 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content29 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt29 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt29 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox29 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img29 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第30部分                                  **/
+.ly-date30 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date30 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content30 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content30 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt30 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt30 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox30 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img30 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第31部分                                  **/
+.ly-date31 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date31 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content31 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content31 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt31 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt31 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 1;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox31 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img31 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第32部分                                  **/
+.ly-date32 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date32 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content32 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content32 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt32 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt32 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox32 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img32 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第33部分                                  **/
+.ly-date33 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date33 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content33 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 1%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content33 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt33 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt33 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox33 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img33 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第34部分                                  **/
+.ly-date34 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-date34 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; 
+}
+.ly-content34 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin-top: 1%;
+    font-family: 'Times New Roman', serif; 
+    font-size: 10vw;
+    text-shadow: 1px;
+        transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content34 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; 
+}
+
+.ly-stxt34 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.6);
+}
+
+    .ly-stxt34 p {
+        font-size: 5vw;
+        
+        text-align: center;
+        line-height: 0;
+        text-indent: 0em;
+        white-space: nowrap;
+    }
+
+.ly-imgbox34 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.ly-img34 {
+    width: 100%;
+    height: 100%;
+}
+
+.ly-content34b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3%;
+    width: 80%;
+            transform: translate(-50%, -50%);
+    opacity: 0; 
+    transform: scale(0.5); 
+    transition: all 0.5s; 
+}
+.active .ly-content34b {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1.5s; 
+}
+
+.play-button341,
+.play-button342,
+.play-button343,
+.play-button344 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    font-size: 3vw;
+    
+    margin-right: 2%;
+
+}
+.ly-content34v1,
+.ly-content34v2,
+.ly-content34v3,
+.ly-content34v4 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-content34v1,
+.active .ly-content34v2,
+.active .ly-content34v3,
+.active .ly-content34v4 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-videobox341,
+.ly-videobox342,
+.ly-videobox343,
+.ly-videobox344 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.ly-video341,
+.ly-video342,
+.ly-video343,
+.ly-video344 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.ret34 {
+    width: 15%;
+    height: auto;
+    margin-top: 5%;
+    font-size: 3vw;
+    background-color: rgba(255,255,255,0.2);
+    border: 2px solid #fff; /* 设置2px白色边框 */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width:100%;
+            margin: 0;
+            flex-direction: column; /* 垂直布局 */
+            background-image: url('./img/cover/pc.jpg'); /* 替换 'path/to/your/image.jpg' 为你的图片路径 */
+            background-size: cover; /* 控制背景图片的尺寸，cover 表示图片将被裁切并保持宽高比填充整个容器 */
+            background-position: center; /* 控制背景图片的位置，这里设置为居中 */
+            align-items: center;
+        }
+
+        #txt {
+            color: white;
+            text-align: center;
+            font-size: 10vw;
+            font-family: 'SimSun', '宋体', sans-serif;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 10%;
+            animation: popIn 0.8s ease-out; /* 添加动画效果，0.8秒渐显，使用 ease-out 缓动函数 */
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.5); /* 初始缩小为0.5倍 */
+                opacity: 0; /* 初始透明度为0，即完全不可见 */
+            }
+
+            to {
+                transform: scale(1); /* 最终正常大小 */
+                opacity: 1; /* 最终透明度为1，即完全可见 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="txt">
+        <p>宝贝 生日快乐</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var txtElement = document.getElementById("txt");
+
+            // 添加事件监听器，监听动画结束事件
+            txtElement.addEventListener("animationend", function () {
+                setTimeout(function () {
+                    alert("ending");
+                    alert("现在开始收礼物吧！");
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>

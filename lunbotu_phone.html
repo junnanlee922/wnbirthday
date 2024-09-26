@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #intro-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* 垂直布局 */
+            background-image: url('./img/cover/phone.jpg'); /* 替换 'path/to/your/image.jpg' 为你的图片路径 */
+            background-size: cover; /* 控制背景图片的尺寸，cover 表示图片将被裁切并保持宽高比填充整个容器 */
+            background-position: center; /* 控制背景图片的位置，这里设置为居中 */
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+            #intro-section p {
+                font-family: 'SimSun', '宋体', sans-serif;
+                font-size: 9vw;
+                line-height: 1.5;
+                margin-bottom: 10%;
+            }
+
+        #start-button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: rgba(255,255,255,0.5);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10%;
+        }
+
+        #image-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: none;
+            align-items: center;
+            background-color: black;
+        }
+
+        #slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+            .slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div id="intro-section">
+        <p>点击下面的按钮<br>开始看彩蛋</p>
+        <button id="start-button" onclick="startSlider()">GO</button>
+    </div>
+
+    <div id="image-container">
+        <div id="slider">
+            <!-- 您的幻灯片内容在这里 -->
+            <div class="slide" data-duration="3400"><img src="./img/end/00_副本.jpg" alt="Image 1"></div>
+            <div class="slide" data-duration="3500"><img src="./img/end/01_副本.jpg" alt="Image 2"></div>
+            <div class="slide" data-duration="2900"><img src="./img/end/02_副本.jpg" alt="Image 1"></div>
+            <div class="slide" data-duration="3500"><img src="./img/end/03_副本.jpg" alt="Image 2"></div>
+            <div class="slide" data-duration="3500"><img src="./img/end/04_副本.jpg" alt="Image 1"></div>
+            <div class="slide" data-duration="3500"><img src="./img/end/05_副本.jpg" alt="Image 2"></div>
+            <div class="slide" data-duration="2800"><img src="./img/end/06_副本.jpg" alt="Image 1"></div>
+            <div class="slide" data-duration="6500"><img src="./img/end/07_副本.jpg" alt="Image 1"></div>
+            <!-- 根据需要添加更多幻灯片 -->
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        let intervalId;
+        let audio;
+
+        function nextSlide() {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+                updateSlider();
+
+                // 获取当前幻灯片的持续时间
+                const currentDuration = parseInt(slides[currentIndex].getAttribute('data-duration'));
+
+                // 使用动态持续时间设置间隔
+                clearInterval(intervalId);
+                intervalId = setInterval(nextSlide, currentDuration);
+            } else {
+                // 达到最后一张幻灯片时停止间隔
+                clearInterval(intervalId);
+                window.location.href = 'end_phone.html'; // 替换为你想要跳转的目标网页地址
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        }
+
+        function updateSlider() {
+            const translateValue = -currentIndex * 100 + '%';
+            slider.style.transform = 'translateX(' + translateValue + ')';
+        }
+
+        function startSlider() {
+            // 开始轮播时播放音频
+            audio = new Audio('./music/五十年以后.mp3');
+            document.getElementById('intro-section').style.display = 'none';
+            document.getElementById('image-container').style.display = 'flex';
+            audio.play();
+
+            // 使用初始持续时间启动间隔
+            const initialDuration = parseInt(slides[currentIndex].getAttribute('data-duration'));
+            intervalId = setInterval(nextSlide, initialDuration);
+        }
+    </script>
+
+</body>
+
+</html>

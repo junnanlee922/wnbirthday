@@ -1,0 +1,2931 @@
+/***                                  内容区域                                 ***/
+.fp-tableCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+/**                                   第1部分                                  **/
+.ly-box11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box11 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ly-txt11 {
+    display: flex;
+    width: 100%;
+    
+    font-size: 4vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt11 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 2vw;
+}
+
+    .ly-stxt11 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox11 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+.active .ly-imgbox11 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; 
+}
+.ly-img11 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第2部分                                  **/
+/* 板块 1*/
+.ly-box21 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box21 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t21 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt21 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt21 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt21 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox21 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img21 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 板块 2*/
+.ly-box22 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: 50%;
+    max-height: 100vh;
+    margin-left: 5%;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box22 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t22 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+}
+
+.ly-txt22 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif;
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    margin-left: 0;
+    text-indent: 1em;
+}
+
+.ly-stxt22 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+    margin-left: 0;
+}
+
+    .ly-stxt22 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox22 {
+    display: flex;
+    margin-bottom: 0;
+    width: auto;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-left: 5%;
+}
+
+.ly-img22 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 板块3 */
+.ly-box23 {background-color: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 5%;
+    height: auto;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box23 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t23 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt23 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt23 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt23 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox23 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img23 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第3部分                                  **/
+/* 板块 1*/
+.ly-box31 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 22%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box31 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t31 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt31 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt31 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt31 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox31 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img31 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box32 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 28%;
+    margin-left: 5%;
+    height: auto;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box32 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t32 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt32 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt32 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt32 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox32 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img32 {
+    width: 100%;
+    height: 100%;
+}
+
+/*板块3 */
+.ly-box33 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box33 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t33 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt33 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt33 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt33 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox33 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img33 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第4部分                                  **/
+/* 板块 1*/
+.ly-box41 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box41 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t41 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt41 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt41 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt41 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox41 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img41 {
+    width: 100%;
+    height: 100%;
+}
+
+.ly-imgbox42 {
+    display: flex;
+    width: 39.5%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-imgbox42 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-img42 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第5部分                                  **/
+
+/* 板块 1*/
+.ly-box51 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 22%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box51 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t51 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt51 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt51 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt51 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox511 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img511 {
+    width: 100%;
+    height: 100%;
+}
+
+.ly-imgbox512 {
+    display: flex;
+    width: 21%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-imgbox512 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-img512 {
+    width: 100%;
+    height: 100%;
+}
+/* 板块 2*/
+.ly-box52 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 32%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box52 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t52 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt52 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt52 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt52 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 1em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox52 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img52 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第6部分                                  **/
+/* 板块 1*/
+.ly-box61 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 18%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box61 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t61 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt61 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt61 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt61 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox61 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img61 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box62 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box62 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t62 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt62 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt62 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt62 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox62 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img62 {
+    width: 100%;
+    height: 100%;
+}
+/*板块3 */
+.ly-box63 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 18%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box63 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t63 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt63 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt63 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt63 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox63 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img63 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第7部分                                  **/
+/* 板块 1*/
+.ly-box71 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box71 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t71 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt71 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt71 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt71 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox71 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img71 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box72 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box72 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t72 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt72 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt72 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt72 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox72 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img72 {
+    width: 100%;
+    height: 100%;
+}
+
+/*板块3 */
+.ly-box73 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box73 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t73 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt73 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt73 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt73 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox73 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img73 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第8部分                                  **/
+/* 板块 1*/
+.ly-box81 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box81 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t81 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt81 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt81 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt81 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox81 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img81 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box82 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box82 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t82 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt82 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt82 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt82 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox82 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img82 {
+    width: 100%;
+    height: 100%;
+}
+
+/*板块3 */
+.ly-box83 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box83 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t83 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt83 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt83 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt83 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox83 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img83 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第9部分                                  **/
+/* 板块 1*/
+.ly-box91 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box91 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t91 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt91 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt91 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt91 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox91 {
+    display: flex;
+    width: 22.3%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-imgbox91 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-img91 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box92 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 3%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box92 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t92 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt92 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt92 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt92 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox92 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img92 {
+    width: 100%;
+    height: 100%;
+}
+
+/*板块3 */
+.ly-box93 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    margin-left: 3%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box93 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 4s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t93 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt93 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt93 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt93 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox93 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img93 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第10部分                                  **/
+/* 板块 1*/
+.ly-box101 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box101 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t101 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt101 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt101 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt101 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+.play-button102{
+    margin-top: 3%;
+}
+.ly-imgbox101 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img101 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box102 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box102 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-videobox102 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.ly-video102 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.ret102 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* 板块 3*/
+.ly-box103 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 21%;
+    height: auto;
+    margin-left: 10%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box103 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t103 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt103 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt103 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt103 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox103 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img103 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/**                                        第11部分                                  **/
+/* 板块 1*/
+.ly-box111 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 32%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box111 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t111 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt111 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt111 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt111 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+.play-button112{
+    margin-top: 3%;
+}
+.ly-imgbox111 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img111 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box112 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box112 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-videobox112 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.ly-video112 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.ret112 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* 板块 3*/
+.ly-box113 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 31%;
+    height: auto;
+    margin-left: 10%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box113 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t113 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt113 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt113 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt113 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox113 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img113 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第12部分                                  **/
+/* 板块 1*/
+.ly-box121 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box121 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t121 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt121 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt121 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt121 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 1em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox121 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img121 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box122 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 32%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box122 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 4s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t122 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt122 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt122 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt122 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 1em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox122 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img122 {
+    width: 100%;
+    height: 100%;
+}
+
+/*板块3 */
+.ly-box123 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box123 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t123 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt123 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt123 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt123 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 1em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox123 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img123 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 4*/
+.ly-box124 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box124 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 3s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t124 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt124 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt124 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt124 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 1em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox124 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img124 {
+    width: 100%;
+    height: 100%;
+}
+
+/**                                        第13部分                                  **/
+/* 板块 1*/
+.ly-box131 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 22%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box131 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t131 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt131 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt131 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt131 p {
+        
+        text-align: left;
+        line-height: 1;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox131 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img131 {
+    width: 100%;
+    height: 100%;
+}
+
+.ly-imgbox132 {
+    display: flex;
+    width: 43.5%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-imgbox132 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-img132 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第14部分                                  **/
+/* 板块 1*/
+.ly-box141 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box141 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t141 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt141 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt141 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt141 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox141 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img141 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box142 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    margin-left: 10%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box142 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t142 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.ly-txt142 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt142 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt142 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox142 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 5%;
+}
+
+.ly-img142 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**                                        第15部分                                  **/
+/* 板块 1*/
+.ly-box151 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin-left: 0%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box151 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-t151 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.ly-txt151 {
+    display: flex;
+    width: 100%;
+    font-family: 'Times New Roman', serif; /* 设置为新罗马字体 */
+    font-size: 2.2vw;
+    text-shadow: 1px;
+    font-color: #000;
+    text-indent: 1em;
+}
+
+.ly-stxt151 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+}
+
+    .ly-stxt151 p {
+        
+        text-align: left;
+        line-height: 0.5;
+        text-indent: 2em;
+        white-space: nowrap;
+        margin-bottom: 2%; /* 设置各个p之间的垂直间距 */
+    }
+
+.ly-imgbox151 {
+    display: flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 3%;
+}
+
+.ly-img151 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 板块 2*/
+.ly-box152 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+    height: auto;
+    margin-left: 5%;
+    max-height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box152 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 2s; /* 延迟 1 秒后开始过渡 */
+}
+
+.play-button1521,
+.play-button1522,
+.play-button1523,
+.play-button1524 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    font-size: 1.2vw;
+    width: 50%;
+    width: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* 板块 3*/
+.ly-box1521,
+.ly-box1522,
+.ly-box1523,
+.ly-box1524 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* 初始透明度为 0 */
+    transform: scale(0.5); /* 初始缩放为 0.5 */
+    transition: all 0.5s; /* 过渡效果，持续 0.5 秒 */
+}
+
+.active .ly-box1521,
+.active .ly-box1522,
+.active .ly-box1523,
+.active .ly-box1524 {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s; /* 延迟 1 秒后开始过渡 */
+}
+
+.ly-videobox1521,
+.ly-videobox1522,
+.ly-videobox1523,
+.ly-videobox1524 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.ly-video1521,
+.ly-video1522,
+.ly-video1523,
+.ly-video1524 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.ret15 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
